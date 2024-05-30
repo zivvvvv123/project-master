@@ -1,0 +1,97 @@
+/* styles for HomePage.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  background-color: #add8e6; /* Light blue background */
+  text-align: center;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+.home-content {
+  margin-top: 20px;
+  color: #333; /* Dark text color */
+  max-width: 800px; /* Set a maximum width for better readability */
+  margin-left: auto; /* Center content */
+  margin-right: auto; /* Center content */
+  /* Add more styling as needed */
+}
+
+.product-container {
+  background-color: #f7f7f7; /* Light gray background for product container */
+  padding: 20px; /* Add some padding around the products */
+  border-radius: 10px; /* Add border radius for a rounded look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  margin-top: 20px; /* Add some space between header and products */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 200px; /* Set width of product item */
+  margin: 10px; /* Add margin between product items */
+  padding: 10px; /* Add padding inside product items */
+  background-color: #fff; /* White background color */
+  border-radius: 8px; /* Add border radius for a rounded look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Move product up on hover */
+}
+
+.product img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  border-radius: 8px; /* Add border radius for a rounded look */
+}
+
+.product-info {
+  margin-top: 10px; /* Add margin on top of product info */
+  font-family: "Roboto", "Arial", sans-serif; /* Use Roboto font for product info */
+}
+
+.product-name {
+  font-size: 18px; /* Larger font size for product name */
+  font-weight: bold; /* Bold font weight for emphasis */
+  margin-bottom: 5px; /* Add margin below product name */
+}
+
+.product-price {
+  font-size: 16px; /* Font size for product price */
+  margin-bottom: 5px; /* Add margin below product price */
+}
+
+.additional-info {
+  font-size: 14px; /* Smaller font size for additional info */
+  color: #666; /* Dark gray color for additional info */
+  margin-top: 5px; /* Add margin on top of additional info */
+}
+
+.small-text {
+  font-size: 12px; /* Smaller font size for small text */
+  color: #999; /* Light gray color for small text */
+}
+
+.add-to-cart-btn {
+  background-color: #6495ed; /* Cornflower blue color for button */
+  color: white; /* White text color */
+  padding: 8px 16px; /* Add padding to button */
+  border: none; /* Remove border */
+  border-radius: 20px; /* Add border radius for a rounded look */
+  cursor: pointer; /* Add cursor pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #4169e1; /* Darker cornflower blue color on hover */
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "_id": "6657d6497b499d326e6fe6fb",
+    "product_name": "שקיות אוכל 200 יח הנמל",
+    "price": "2.90",
+    "brand": "הנמל",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/8/3/835811007678.png",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fe0b4",
+    "product_name": "טבעות בצל",
+    "price": "‏15.90 ₪",
+    "brand": "שף הטבע",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290002618263.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fdfa9",
+    "product_name": "מאגדת שלגונים בציפוי שוקו שלישייה",
+    "price": "‏10.00 ₪",
+    "brand": "גלידות פלדמן",
+    "discount": "2 יח' ב- ‏18 ₪",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290101114383.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fdf50",
+    "product_name": "פרוט & ווג' תפוח אוכמניות 350 מ\"ל",
+    "price": "6.90",
+    "brand": "פרוט&ווג",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290019153948.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fde54",
+    "product_name": "סירופ דיאט פטל 1 ליטר",
+    "price": "9.90",
+    "brand": "יכין",
+    "discount": "2 יח' ב- ‏18 ₪",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290000209524.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fd8be",
+    "product_name": "ג'ל לניקוי עם אקונומיקה מקציפה בניחוח לבנדר טואלט דאק 750 מ\"ל",
+    "price": "12.90",
+    "brand": "דאק",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/8/6/8690784516662.png",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fd964",
+    "product_name": "מרכך כביסה מקסימה 4 ליטר",
+    "price": "21.90",
+    "brand": "סנו מקסימה",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290108351835.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fdc93",
+    "product_name": "בוראטה 28% שומן 125 גרם",
+    "price": "18.90",
+    "brand": "מחלבות גד",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290019635031.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fd94c",
+    "product_name": "קוטל חרקים K333",
+    "price": "29.90",
+    "brand": "K333",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290013269911.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fd8fa",
+    "product_name": "אקונומיקה סנו 4 ליטר",
+    "price": "10.90",
+    "brand": "Javel",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290000288031.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fdb43",
+    "product_name": "בר דנונה פצפוצים",
+    "price": "4.70",
+    "brand": "דנונה",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290000408354.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fd8cc",
+    "product_name": "סנו נוזל מילוי לתרסיס מנקה ומבריק רהיטים",
+    "price": "14.90",
+    "brand": "סנו",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290000292434.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fdfb6",
+    "product_name": "שניצל עוף ילדודס מיני דינוזאור 100% רכיבים טבעיים 700 גרם",
+    "price": "‏32.90 ₪",
+    "brand": "עוף טוב",
+    "discount": "2 יח' ב- ‏50 ₪",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290000158105.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fe07b",
+    "product_name": "קציצות בקר 500 גרם",
+    "price": "‏24.90 ₪",
+    "brand": "עוף טוב",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290019204978.jpg",
+    "__v": 0
+  },
+  {
+    "_id": "6657d6497b499d326e6fd92d",
+    "product_name": "אירוויק אקטיב פרש מכשיר + מילוי בניחוח יער גשם",
+    "price": "49.90",
+    "brand": "אירוויק",
+    "discount": "",
+    "image_url": "https://yochananof.co.il/media/catalog/product/cache/0a75b106ebeba5ac77f0b3b021b33564/7/2/7290112005519.jpg",
+    "__v": 0
+  }
+]
