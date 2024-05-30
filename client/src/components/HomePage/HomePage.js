@@ -16,7 +16,7 @@ const AuthenticateUserToken = async () => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${accessToken}`, // Use "Bearer" prefix
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 
@@ -68,7 +68,6 @@ const HomePage = () => {
   }, [navigate]);
 
   const handleAddToCart = (productId) => {
-    // Handle adding product to cart
     console.log(`Product added to cart: ${productId}`);
   };
 

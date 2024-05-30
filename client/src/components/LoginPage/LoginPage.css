@@ -1,17 +1,16 @@
-/* components/LoginPage.css */
 .login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #e0f7fa; /* Light blue background color */
+  background-color: #e0f7fa;
 }
 
 .login-header {
   font-size: 24px;
   margin-bottom: 20px;
-  font-family: "Arial", sans-serif; /* Change to your preferred font */
+  font-family: "Arial", sans-serif;
 }
 
 .login-content {
@@ -31,7 +30,7 @@
 .login-box h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  font-family: "Arial", sans-serif; /* Change to your preferred font */
+  font-family: "Arial", sans-serif;
 }
 
 .login-box form {
@@ -44,10 +43,10 @@
 }
 
 .login-box input {
-  padding: 5px; /* Reduce the padding to make the input boxes less tall */
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-bottom: 10px; /* Add margin to create space between input boxes */
+  margin-bottom: 10px;
 }
 
 .login-box button {
@@ -57,13 +56,13 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: "Arial", sans-serif; /* Change to your preferred font */
+  font-family: "Arial", sans-serif;
 }
 
 .signup-link {
   margin-top: 20px;
   font-size: 14px;
-  font-family: "Arial", sans-serif; /* Change to your preferred font */
+  font-family: "Arial", sans-serif;
 }
 
 .signup-link a {

@@ -35,7 +35,6 @@ const LoginPage = () => {
         body: JSON.stringify({ username, password }),
       });
 
-      // Check if the request was successful (status code 2xx)
       if (response.ok) {
         const data = await response.json();
 
@@ -46,7 +45,6 @@ const LoginPage = () => {
           console.error("Access Token not found in the response");
         }
       } else {
-        // Check for specific status codes to determine the reason for login failure
         if (response.status === 401) {
           setError("Invalid username or password");
         } else {

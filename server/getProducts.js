@@ -1,19 +1,14 @@
-// fetchItems.js
-
 const mongoose = require("mongoose");
 const fs = require("fs");
 const path = require("path");
 
-// MongoDB Atlas connection string
-const uri = "mongodb+srv://Ziv:Oriziv12@project.dz2dhdd.mongodb.net/products"; // Connect to 'products' database
+const uri = "mongodb+srv://Ziv:Oriziv12@project.dz2dhdd.mongodb.net/products";
 
-// Connect to MongoDB
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("DB CONNECTED"))
   .catch((err) => console.log("DB connection error:", err));
 
-// Define a schema and model for the 'juhananof' collection
 const productSchema = new mongoose.Schema(
   {
     product_name: { type: String },
@@ -32,18 +27,15 @@ const productSchema = new mongoose.Schema(
 
 const Juhananof = mongoose.model("Juhananof", productSchema);
 
-// Create the directory if it doesn't exist
 const dir = path.join(__dirname, "server/products");
 if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
-// Function to fetch all items from 'juhananof' collection and save to JSON file
-// Function to fetch all items from 'juhananof' collection and save to JSON file
 const fetchAndSaveItems = () => {
   Juhananof.find({})
     .then((items) => {
-      console.log("Retrieved items:", items); // Log retrieved items
+      console.log("Retrieved items:", items);
 
       if (items.length === 0) {
         console.log("No documents found in the collection.");
@@ -68,7 +60,7 @@ const fetchAndSaveItems = () => {
       console.log("Error occurred while fetching items:", err);
     })
     .finally(() => {
-      mongoose.connection.close(); // Close the connection after operation
+      mongoose.connection.close();
     });
 };
 
