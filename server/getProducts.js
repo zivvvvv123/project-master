@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const fs = require("fs");
 const path = require("path");
 
-const uri = "mongodb+srv://Ziv:Oriziv12@project.dz2dhdd.mongodb.net/products";
+const uri = "mongodb+srv://Ziv:Oriziv12@project.dz2dhdd.mongodb.net/CheaperSal";
 
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -21,47 +21,24 @@ const productSchema = new mongoose.Schema(
     discount: { type: String },
     productLink: { type: String },
     img_url: { type: String },
+    supermarket_id: { type: String },
   },
-  { collection: "juhananof" }
+  { collection: "products" }
 );
 
-const Juhananof = mongoose.model("Juhananof", productSchema);
+const Product = mongoose.model("Product", productSchema);
 
-const dir = path.join(__dirname, "server/products");
-if (!fs.existsSync(dir)) {
-  fs.mkdirSync(dir, { recursive: true });
-}
-
-const fetchAndSaveItems = () => {
-  Juhananof.find({})
-    .then((items) => {
-      console.log("Retrieved items:", items);
-
-      if (items.length === 0) {
-        console.log("No documents found in the collection.");
-        return;
-      }
-
-      const jsonContent = JSON.stringify(items, null, 2);
-      const filePath = path.join(__dirname, "products/juhananof.json");
-
-      fs.writeFile(filePath, jsonContent, "utf8", (err) => {
-        if (err) {
-          console.log(
-            "An error occurred while writing JSON Object to File.",
-            err
-          );
-          return;
-        }
-        console.log("JSON file has been saved.");
-      });
+const fetchAndSaveProducts = () => {
+  Product.find({})
+    .then((products) => {
+      const filePath = path.join(__dirname, "products/products.json");
+      fs.writeFileSync(filePath, JSON.stringify(products, null, 2), "utf8");
+      console.log("Products have been saved.");
+      mongoose.connection.close();
     })
     .catch((err) => {
-      console.log("Error occurred while fetching items:", err);
-    })
-    .finally(() => {
-      mongoose.connection.close();
+      console.log("Error occurred while fetching products:", err);
     });
 };
 
-fetchAndSaveItems();
+fetchAndSaveProducts();

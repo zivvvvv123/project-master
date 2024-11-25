@@ -14,10 +14,7 @@ const authenticateToken = (req, res, next) => {
     const decodedToken = jwt.verify(token, secretKey);
 
     req.user = decodedToken.user;
-
-    if (next && typeof next === "function") {
-      next(); // Move next() inside the try block
-    }
+    next();
   } catch (error) {
     console.error("Error during authentication:", error);
     return res

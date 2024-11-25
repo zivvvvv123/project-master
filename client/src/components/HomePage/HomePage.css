@@ -12,6 +12,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .home-content {
@@ -31,6 +32,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-y: auto; /* Enable scrolling */
 }
 
 .product {

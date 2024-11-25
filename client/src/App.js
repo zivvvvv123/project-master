@@ -1,10 +1,11 @@
-// App.js
 import React from "react";
-import LoginPage from "./components/LoginPage/LoginPage";
 import { Route, Routes } from "react-router-dom";
+import LoginPage from "./components/LoginPage/LoginPage";
 import SignupPage from "./components/SingupPage/SignupPage";
 import HomePage from "./components/HomePage/HomePage";
 import CartPage from "./components/CartPage/CartPage";
+import ResultPage from "./components/ResultPage/ResultPage";
+
 const App = () => {
   return (
     <Routes>
@@ -12,6 +13,7 @@ const App = () => {
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/home" element={<HomePage />} />
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/result" element={<ResultPage />} />
       <Route path="/" element={<LoginPage />} />
     </Routes>
   );

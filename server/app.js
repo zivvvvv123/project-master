@@ -5,18 +5,18 @@ const morgan = require("morgan");
 const cors = require("cors");
 const userRoute = require("./routes/userRoutes");
 const authRoute = require("./routes/authRoutes");
-const randomRoute = require("./routes/randomRoutes");
+const productsRoute = require("./routes/productsRoutes");
 
 const app = express();
-app.use(express.json());
+const port = 8080;
 
 mongoose
   .connect(
-    "mongodb+srv://Ziv:Oriziv12@project.dz2dhdd.mongodb.net/OverReview",
+    "mongodb+srv://Ziv:Oriziv12@project.dz2dhdd.mongodb.net/CheaperSal",
     {}
   )
   .then(() => console.log("DB CONNECTED"))
-  .catch(() => console.log("db connection error"));
+  .catch(() => console.log("DB connection error"));
 
 app.use(bodyParser.json());
 app.use(morgan("dev"));
@@ -24,12 +24,7 @@ app.use(cors({ origin: true, credentials: true }));
 
 app.use("/users", userRoute);
 app.use("/auth", authRoute);
-app.use("/products", randomRoute);
-
-const port = 8080;
-
-const server = app.listen(
-  port,
-  () => console.log(`server is running on port ${port}`),
-  console.log(require("crypto").randomBytes(32).toString("hex"))
-);
+app.use("/products", productsRoute);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
